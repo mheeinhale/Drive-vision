@@ -18,36 +18,36 @@
     </header>
 
 
-        <form action="" autocomplete="off" class="col-lg-8 col-md-9">
+        <form action="" autocomplete="off" class="col-lg-10 col-md-9">
 
             <div class="customer-info">
-                <h3>ข้อมูลลูกค้า</h3>
-                <div class="row">
-                    <div class="form-card col-xl-6">
+                <h3 class="text-center">ข้อมูลลูกค้า</h3>
+                <div class="row justify-content-around">
+                    <div class="form-card col-xl-5">
                         <label for="name">ชื่อผู้ติดต่อ</label>
                         <input id="name" type="text" placeholder="ชื่อ">
                     </div>
     
-                    <div class="form-card col-xl-6">
+                    <div class="form-card col-xl-5">
                         <label for="email">อีเมล์ผู้ติดต่อ</label>
                         <input id="email" type="email" placeholder="อีเมล์">
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="form-card col-xl-6">
+                <div class="row justify-content-around">
+                    <div class="form-card col-xl-5">
                         <label for="address">ที่อยู่ผู้ติดต่อ</label>
                         <input id="address" type="text" placeholder="ที่อยู่">
                     </div>
     
-                    <div class="form-card col-xl-6">
+                    <div class="form-card col-xl-5">
                         <label for="tel">เบอร์โทรติดต่อ</label>
                         <input id="tel" type="text" placeholder="เบอร์โทร">
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="form-card col-xl-6">
+                <div class="row justify-content-around">
+                    <div class="form-card col-xl-5">
                         <label for="line">ID Line</label>
                         <input id="line" type="text" placeholder="ID">
                     </div>
@@ -55,13 +55,13 @@
             </div>
 
             <div class="customer-info">
-                <h3>ข้อมูลบริษัท</h3>
-                <div class="row">
-                    <div class="form-card col-xl-6">
+                <h3 class="text-center">ข้อมูลบริษัท</h3>
+                <div class="row justify-content-around">
+                    <div class="form-card col-xl-5">
                         <label for="company-name">ชื่อบริษัท</label>
                         <input id="company-name" type="text" placeholder="ชื่อ">
                     </div>
-                    <div class="form-card col-xl-6">
+                    <div class="form-card col-xl-5">
                         <label for="company-address">ที่อยู่บริษัท</label>
                         <input id="company-address" type="text" placeholder="ที่อยู่">
                     </div>
@@ -69,9 +69,9 @@
             </div>
 
             <div class="customer-info">
-                <h3>ข้อมูลธุรกิจ</h3>
-                <div class="row">
-                    <div class="form-card col-xl-6">
+                <h3 class="text-center">ข้อมูลธุรกิจ</h3>
+                <div class="row justify-content-around">
+                    <div class="form-card col-xl-5">
                         <label for="category">ประเภทของธุรกิจ</label>
                         <div class="checkbox-option">
                             <input id="category-1" type="checkbox">
@@ -87,7 +87,7 @@
                         </div>
                         <input id="category-extra" type="text" placeholder="อื่นๆ โปรดระบุ">
                     </div>
-                    <div class="form-card col-xl-6">
+                    <div class="form-card col-xl-5">
                         <label class="option-header">ความต้องการในการใช้งาน</label>
                         <div class="checkbox-option">
                             <input id="features-1" type="checkbox">
@@ -117,35 +117,37 @@
                     </div>
                 </div>
                 
-                
-                <div class="form-card col-xl-6">
-                    <label class="option-header">งบประมาณในการจัดซื้อซอฟแวร์ (ต่อเดือน)</label>
-
-                    <div class="radio-option">
-                        <input id="0-300" type="radio" name="price-range">
-                        <label for="0-300">0 - 300฿</label>
+                <div class="row justify-content-around">
+                    <div class="form-card col-xl-5">
+                        <label class="option-header">งบประมาณในการจัดซื้อซอฟแวร์ (ต่อเดือน)</label>
+    
+                        <div class="radio-option">
+                            <input id="0-300" type="radio" name="price-range">
+                            <label for="0-300">0 - 300฿</label>
+                        </div>
+    
+                        <div class="radio-option">
+                            <input id="301-500" type="radio" name="price-range">
+                            <label for="301-500">301 - 500฿</label>
+                        </div>
+    
+                        <div class="radio-option">
+                            <input id="501-1000" type="radio" name="price-range">
+                            <label for="501-1000">501 - 1000฿</label>
+                        </div>
+    
+                        <div class="radio-option">
+                            <input id="1000-up" type="radio" name="price-range">
+                            <label for="1000-up">1000฿ หรือ มากกว่า</label>
+                        </div>
                     </div>
-
-                    <div class="radio-option">
-                        <input id="301-500" type="radio" name="price-range">
-                        <label for="301-500">301 - 500฿</label>
-                    </div>
-
-                    <div class="radio-option">
-                        <input id="501-1000" type="radio" name="price-range">
-                        <label for="501-1000">501 - 1000฿</label>
-                    </div>
-
-                    <div class="radio-option">
-                        <input id="1000-up" type="radio" name="price-range">
-                        <label for="1000-up">1000฿ หรือ มากกว่า</label>
-                    </div>
-
-
                 </div>
             </div>
 
-            <button class="btn btn-danger btn-lg" type="submit">Send</button>
+            <div class="col text-center">
+                <button class="btn btn-danger btn-lg" type="submit">Send</button>
+            </div>
+            
 
         </form>
 

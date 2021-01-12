@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/styles.css">
     <title>Inquiry Form</title>
@@ -16,97 +17,109 @@
 
     </header>
 
-    <div class="container">
-        <form action="" autocomplete="off">
+
+        <form action="" autocomplete="off" class="col-lg-8 col-md-9">
 
             <div class="customer-info">
                 <h3>ข้อมูลลูกค้า</h3>
-                <div class="form-card">
-                    <label for="name">ชื่อผู้ติดต่อ</label>
-                    <input id="name" type="text" placeholder="ชื่อ">
+                <div class="row">
+                    <div class="form-card col-xl-6">
+                        <label for="name">ชื่อผู้ติดต่อ</label>
+                        <input id="name" type="text" placeholder="ชื่อ">
+                    </div>
+    
+                    <div class="form-card col-xl-6">
+                        <label for="email">อีเมล์ผู้ติดต่อ</label>
+                        <input id="email" type="email" placeholder="อีเมล์">
+                    </div>
                 </div>
 
-                <div class="form-card">
-                    <label for="email">อีเมล์ผู้ติดต่อ</label>
-                    <input id="email" type="email" placeholder="อีเมล์">
+                <div class="row">
+                    <div class="form-card col-xl-6">
+                        <label for="address">ที่อยู่ผู้ติดต่อ</label>
+                        <input id="address" type="text" placeholder="ที่อยู่">
+                    </div>
+    
+                    <div class="form-card col-xl-6">
+                        <label for="tel">เบอร์โทรติดต่อ</label>
+                        <input id="tel" type="text" placeholder="เบอร์โทร">
+                    </div>
                 </div>
 
-                <div class="form-card">
-                    <label for="address">ที่อยู่ผู้ติดต่อ</label>
-                    <input id="address" type="text" placeholder="ที่อยู่">
-                </div>
-
-                <div class="form-card">
-                    <label for="tel">เบอร์โทรติดต่อ</label>
-                    <input id="tel" type="text" placeholder="เบอร์โทร">
-                </div>
-
-                <div class="form-card">
-                    <label for="line">ID Line</label>
-                    <input id="line" type="text" placeholder="ID">
+                <div class="row">
+                    <div class="form-card col-xl-6">
+                        <label for="line">ID Line</label>
+                        <input id="line" type="text" placeholder="ID">
+                    </div>
                 </div>
             </div>
 
             <div class="customer-info">
                 <h3>ข้อมูลบริษัท</h3>
-                <div class="form-card">
-                    <label for="company-name">ชื่อบริษัท</label>
-                    <input id="company-name" type="text" placeholder="ชื่อ">
-                </div>
-                <div class="form-card">
-                    <label for="company-address">ที่อยู่บริษัท</label>
-                    <input id="company-address" type="text" placeholder="ที่อยู่">
+                <div class="row">
+                    <div class="form-card col-xl-6">
+                        <label for="company-name">ชื่อบริษัท</label>
+                        <input id="company-name" type="text" placeholder="ชื่อ">
+                    </div>
+                    <div class="form-card col-xl-6">
+                        <label for="company-address">ที่อยู่บริษัท</label>
+                        <input id="company-address" type="text" placeholder="ที่อยู่">
+                    </div>
                 </div>
             </div>
 
             <div class="customer-info">
                 <h3>ข้อมูลธุรกิจ</h3>
-                <div class="form-card">
-                    <label for="category">ประเภทของธุรกิจ</label>
-                    <div class="checkbox-option">
-                        <input id="category-1" type="checkbox">
-                        <label for="category-1">โรงน้ำแข็ง</label>
+                <div class="row">
+                    <div class="form-card col-xl-6">
+                        <label for="category">ประเภทของธุรกิจ</label>
+                        <div class="checkbox-option">
+                            <input id="category-1" type="checkbox">
+                            <label for="category-1">โรงน้ำแข็ง</label>
+                        </div>
+                        <div class="checkbox-option">
+                            <input id="category-2" type="checkbox">
+                            <label for="category-2">ร้านน้ำ</label>
+                        </div>
+                        <div class="checkbox-option">
+                            <input id="category-3" type="checkbox">
+                            <label for="category-3">ร้านค้าขายส่ง</label>
+                        </div>
+                        <input id="category-extra" type="text" placeholder="อื่นๆ โปรดระบุ">
                     </div>
-                    <div class="checkbox-option">
-                        <input id="category-2" type="checkbox">
-                        <label for="category-2">ร้านน้ำ</label>
+                    <div class="form-card col-xl-6">
+                        <label class="option-header">ความต้องการในการใช้งาน</label>
+                        <div class="checkbox-option">
+                            <input id="features-1" type="checkbox">
+                            <label for="features-1">ติดตามยอดการซื้อ-ขาย แบบ Realtime</label>
+                        </div>
+    
+                        <div class="checkbox-option">
+                            <input id="features-2" type="checkbox">
+                            <label for="features-2">คำนวนบัญชีอัตโนมัติ</label>
+                        </div>
+    
+                        <div class="checkbox-option">
+                            <input id="features-3" type="checkbox">
+                            <label for="features-3">มี QR เช็คยอดเบิกก่อนทำส่งสินค้า</label>
+                        </div>
+    
+                        <div class="checkbox-option">
+                            <input id="features-4" type="checkbox">
+                            <label for="features-4">ระบบนำทางคนขับ</label>
+                        </div>
+    
+                        <div class="checkbox-option">
+                            <input id="features-5" type="checkbox">
+                            <label for="features-5">คำนวณและแจ้งเตือนสินเชื่อและค้างจ่าย</label>
+                        </div>
+                        <input id="features-extra" type="text" placeholder="อื่นๆ โปรดระบุ">
                     </div>
-                    <div class="checkbox-option">
-                        <input id="category-3" type="checkbox">
-                        <label for="category-3">ร้านค้าขายส่ง</label>
-                    </div>
-                    <input id="category-extra" type="text" placeholder="อื่นๆ โปรดระบุ">
                 </div>
-                <div class="form-card">
-                    <p class="option-header">ความต้องการในการใช้งาน</p>
-                    <div class="checkbox-option">
-                        <input id="features-1" type="checkbox">
-                        <label for="features-1">ติดตามยอดการซื้อ-ขาย แบบ Realtime</label>
-                    </div>
-
-                    <div class="checkbox-option">
-                        <input id="features-2" type="checkbox">
-                        <label for="features-2">คำนวนบัญชีอัตโนมัติ</label>
-                    </div>
-
-                    <div class="checkbox-option">
-                        <input id="features-3" type="checkbox">
-                        <label for="features-3">มี QR เช็คยอดเบิกก่อนทำส่งสินค้า</label>
-                    </div>
-
-                    <div class="checkbox-option">
-                        <input id="features-4" type="checkbox">
-                        <label for="features-4">ระบบนำทางคนขับ</label>
-                    </div>
-
-                    <div class="checkbox-option">
-                        <input id="features-5" type="checkbox">
-                        <label for="features-5">คำนวณและแจ้งเตือนสินเชื่อและค้างจ่าย</label>
-                    </div>
-                    <input id="features-extra" type="text" placeholder="อื่นๆ โปรดระบุ">
-                </div>
-                <div class="form-card">
-                    <p class="option-header">งบประมาณในการจัดซื้อซอฟแวร์</p>
+                
+                
+                <div class="form-card col-xl-6">
+                    <label class="option-header">งบประมาณในการจัดซื้อซอฟแวร์ (ต่อเดือน)</label>
 
                     <div class="radio-option">
                         <input id="0-300" type="radio" name="price-range">
@@ -132,10 +145,10 @@
                 </div>
             </div>
 
-            <button class="submit-btn" type="submit">Send</button>
+            <button class="btn btn-danger btn-lg" type="submit">Send</button>
 
         </form>
-    </div>
+
 
     <footer>
         <p>Dev Hero Co.ltd Copyright 2020</p>

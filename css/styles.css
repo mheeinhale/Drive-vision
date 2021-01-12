@@ -5,27 +5,22 @@
 }
 
 html {
-    font-family: kanit;
     font-size: 62.5%;
 }
 
 body {
+    font-family: Kanit;
     font-size: 1.8rem;
 }
 
 form {
     padding: 3rem 5rem;
     margin: 0 auto;
-    width: 40%;
-
-    display: flex;
-    flex-direction: column;
 }
 
 button {
     font-size: 1.5rem;
     padding: .5rem 1rem;
-    align-self: center;
 }
 
 label, input {
@@ -35,7 +30,7 @@ label, input {
 input {
     font-size: 1.5rem;
     border: none;
-    width: 75%;
+    width: 100%;
     padding-bottom: .5rem;
     border-bottom: thin solid grey;
 }
@@ -76,11 +71,11 @@ footer p {
 }
 
 
-@media screen and (max-width: 1400px) {
+/* @media screen and (max-width: 1250px) {
     form {
         padding: 3rem 5rem;
         margin: 0 auto;
-        width: 80%;
+        width: 60%;
     
         display: flex;
         flex-direction: column;
@@ -96,4 +91,4 @@ footer p {
         display: flex;
         flex-direction: column;
     }
-}
+} */

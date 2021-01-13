@@ -18,134 +18,213 @@
     </header>
 
 
-        <form action="" autocomplete="off" class="col-lg-10 col-md-9">
+        <form action="" autocomplete="off" class="col-xl-5 col-lg-6 col-md-9">
 
-            <div class="customer-info">
-                <h3 class="text-center">ข้อมูลลูกค้า</h3>
-                <div class="row justify-content-around">
-                    <div class="form-card col-xl-5">
-                        <label for="name">ชื่อผู้ติดต่อ</label>
-                        <input id="name" type="text" placeholder="ชื่อ">
-                    </div>
-    
-                    <div class="form-card col-xl-5">
-                        <label for="email">อีเมล์ผู้ติดต่อ</label>
-                        <input id="email" type="email" placeholder="อีเมล์">
-                    </div>
-                </div>
-
-                <div class="row justify-content-around">
-                    <div class="form-card col-xl-5">
-                        <label for="address">ที่อยู่ผู้ติดต่อ</label>
-                        <input id="address" type="text" placeholder="ที่อยู่">
-                    </div>
-    
-                    <div class="form-card col-xl-5">
-                        <label for="tel">เบอร์โทรติดต่อ</label>
-                        <input id="tel" type="text" placeholder="เบอร์โทร">
-                    </div>
-                </div>
-
-                <div class="row justify-content-around">
-                    <div class="form-card col-xl-5">
-                        <label for="line">ID Line</label>
-                        <input id="line" type="text" placeholder="ID">
-                    </div>
-                </div>
+            <div class="form-section">
+                <h2 class="section-header">ข้อมูลสินค้า</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum itaque odio ipsa voluptate eius amet modi, quas voluptatibus eum molestiae dolor accusamus debitis provident illum voluptas libero dolore qui ex.</p>
             </div>
 
-            <div class="customer-info">
-                <h3 class="text-center">ข้อมูลบริษัท</h3>
-                <div class="row justify-content-around">
-                    <div class="form-card col-xl-5">
-                        <label for="company-name">ชื่อบริษัท</label>
-                        <input id="company-name" type="text" placeholder="ชื่อ">
-                    </div>
-                    <div class="form-card col-xl-5">
-                        <label for="company-address">ที่อยู่บริษัท</label>
-                        <input id="company-address" type="text" placeholder="ที่อยู่">
-                    </div>
-                </div>
-            </div>
+            <p class="section-header blockquote">
+                <span class="required">**</span> โปรดกรอกรายละเอียด เพื่อที่ทางบริษัทจะได้ติดต่อกลับไปได้อย่างรวดเร็วและถูกต้อง
+            </p>
+            
+            <div class="form-section">
+                <h2 class="section-header">ข้อมูลลูกค้า</h2>
 
-            <div class="customer-info">
-                <h3 class="text-center">ข้อมูลธุรกิจ</h3>
-                <div class="row justify-content-around">
-                    <div class="form-card col-xl-5">
-                        <label for="category">ประเภทของธุรกิจ</label>
-                        <div class="checkbox-option">
-                            <input id="category-1" type="checkbox">
-                            <label for="category-1">โรงน้ำแข็ง</label>
-                        </div>
-                        <div class="checkbox-option">
-                            <input id="category-2" type="checkbox">
-                            <label for="category-2">ร้านน้ำ</label>
-                        </div>
-                        <div class="checkbox-option">
-                            <input id="category-3" type="checkbox">
-                            <label for="category-3">ร้านค้าขายส่ง</label>
-                        </div>
-                        <input id="category-extra" type="text" placeholder="อื่นๆ โปรดระบุ">
-                    </div>
-                    <div class="form-card col-xl-5">
-                        <label class="option-header">ความต้องการในการใช้งาน</label>
-                        <div class="checkbox-option">
-                            <input id="features-1" type="checkbox">
-                            <label for="features-1">ติดตามยอดการซื้อ-ขาย แบบ Realtime</label>
-                        </div>
-    
-                        <div class="checkbox-option">
-                            <input id="features-2" type="checkbox">
-                            <label for="features-2">คำนวนบัญชีอัตโนมัติ</label>
-                        </div>
-    
-                        <div class="checkbox-option">
-                            <input id="features-3" type="checkbox">
-                            <label for="features-3">มี QR เช็คยอดเบิกก่อนทำส่งสินค้า</label>
-                        </div>
-    
-                        <div class="checkbox-option">
-                            <input id="features-4" type="checkbox">
-                            <label for="features-4">ระบบนำทางคนขับ</label>
-                        </div>
-    
-                        <div class="checkbox-option">
-                            <input id="features-5" type="checkbox">
-                            <label for="features-5">คำนวณและแจ้งเตือนสินเชื่อและค้างจ่าย</label>
-                        </div>
-                        <input id="features-extra" type="text" placeholder="อื่นๆ โปรดระบุ">
+                <div class="row g-0">
+                    <div class="col-12">
+                        <label class="text-label" for="">ชื่อ-นามสกุล <span class="required">*</span></label>
+                        <input class="text-input" type="text">
                     </div>
                 </div>
                 
-                <div class="row justify-content-around">
-                    <div class="form-card col-xl-5">
-                        <label class="option-header">งบประมาณในการจัดซื้อซอฟแวร์ (ต่อเดือน)</label>
-    
-                        <div class="radio-option">
-                            <input id="0-300" type="radio" name="price-range">
-                            <label for="0-300">0 - 300฿</label>
-                        </div>
-    
-                        <div class="radio-option">
-                            <input id="301-500" type="radio" name="price-range">
-                            <label for="301-500">301 - 500฿</label>
-                        </div>
-    
-                        <div class="radio-option">
-                            <input id="501-1000" type="radio" name="price-range">
-                            <label for="501-1000">501 - 1000฿</label>
-                        </div>
-    
-                        <div class="radio-option">
-                            <input id="1000-up" type="radio" name="price-range">
-                            <label for="1000-up">1000฿ หรือ มากกว่า</label>
-                        </div>
+                <div class="row g-0">
+                    <div class="col-12">
+                        <label class="text-label" for="">อีเมล <span class="required">*</span></label>
+                        <input class="text-input" type="email">
+                    </div>
+                </div>
+                
+                <div class="row g-0">
+                    <div class="col-12">
+                        <label class="text-label" for="">Line ID</label>
+                        <input class="text-input" type="text">
+                    </div>
+                </div>
+                
+                <div class="row g-0">
+                    <div class="col-12">
+                        <label class="text-label" for="">เบอร์ติดต่อ <span class="required">*</span></label>
+                        <input class="text-input" type="text">
+                    </div>
+                </div>
+
+                <h4>ที่อยู่</h4>
+                <div class="row">
+                    <div class="col-3">
+                        <label class="text-label" for="">เลขที่</label>
+                        <input class="text-input" type="text">
+                    </div>
+                    <div class="col-3">
+                        <label class="text-label" for="">หมู่</label>
+                        <input class="text-input" type="text">
+                    </div>
+                    <div class="col-3">
+                        <label class="text-label" for="">ตำบล</label>
+                        <input class="text-input" type="text">
+                    </div>
+                    <div class="col-3">
+                        <label class="text-label" for="">เขต/อำเภอ</label>
+                        <input class="text-input" type="text">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <label class="text-label" for="">จังหวัด</label>
+                        <input class="text-input" type="text">
+                    </div>
+                    <div class="col-6">
+                        <label class="text-label" for="">ถนน</label>
+                        <input class="text-input" type="text">
+                    </div>
+                    <div class="col-3">
+                        <label class="text-label" for="">รหัสไปรษณีย์</label>
+                        <input class="text-input" type="text">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="form-section">
+                <h2 class="section-header">ข้อมูลบริษัท</h2>
+
+                <div class="row g-0">
+                    <div class="col-12">
+                        <label class="text-label" for="">ชื่อบริษัท <span class="required">*</span></label>
+                        <input class="text-input" type="email">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <label class="text-label" for="">เลขที่</label>
+                        <input class="text-input" type="text">
+                    </div>
+                    <div class="col-3">
+                        <label class="text-label" for="">หมู่</label>
+                        <input class="text-input" type="text">
+                    </div>
+                    <div class="col-3">
+                        <label class="text-label" for="">ตำบล</label>
+                        <input class="text-input" type="text">
+                    </div>
+                    <div class="col-3">
+                        <label class="text-label" for="">เขต/อำเภอ</label>
+                        <input class="text-input" type="text">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <label class="text-label" for="">จังหวัด</label>
+                        <input class="text-input" type="text">
+                    </div>
+                    <div class="col-6">
+                        <label class="text-label" for="">ถนน</label>
+                        <input class="text-input" type="text">
+                    </div>
+                    <div class="col-3">
+                        <label class="text-label" for="">รหัสไปรษณีย์</label>
+                        <input class="text-input" type="text">
                     </div>
                 </div>
             </div>
 
+            <div class="form-section">
+                <h2 class="section-header">ข้อมูลธุรกิจ</h2>
+
+                <h4>ประเภทธุรกิจ <span class="required">*</span></h4>
+
+                <div class="col">
+                    <input name="biz-type" id="ice-manu" type="radio">
+                    <label class="radio-label" for="ice-manu">โรงน้ำแข็ง</label>
+                </div>
+                
+                <div class="col">
+                    <input name="biz-type" id="bev-sell" type="radio">
+                    <label class="radio-label" for="bev-sell">ร้านน้ำ</label>
+                </div>
+            
+                <div class="col">
+                    <input name="biz-type" id="gen-sell" type="radio">
+                    <label class="radio-label" for="gen-sell">ร้านค้าขายส่ง</label>
+                </div>
+                
+                <div class="col">
+                    <input name="biz-type" id="other-biz" type="radio">
+                    <input class="other" type="text" placeholder="อื่นๆ โปรดระบุ" for='other-biz'>
+                </div>
+
+                <h4>ความต้องการในการใช้งาน</h4>
+
+                <div class="col">
+                    <input class="" type="checkbox">
+                    <label class="checkbox-label" for="">ติดตามยอดการ ซื้อ-ขาย แบบ Realtime</label>
+                </div>
+
+                <div class="col">
+                    <input class="" type="checkbox">
+                    <label class="checkbox-label" for="">คำนวนบัญชีอัตโนมัติ</label>
+                </div>
+
+                <div class="col">
+                    <input class="" type="checkbox">
+                    <label class="checkbox-label" for="">มี QR เช็คยอดเบิก ก่อนทำการส่งสินค้า</label>
+                </div>
+
+                <div class="col">
+                    <input class="" type="checkbox">
+                    <label class="checkbox-label" for="">ระบบนำทางคนขับ</label>
+                </div>
+
+                <div class="col">
+                    <input class="" type="checkbox">
+                    <label class="checkbox-label" for="">คำนวนและแจ้งเตือนสินเชื่อและค้างจ่าย</label>
+                </div>
+
+                <div class="col">
+                    <input class="" type="checkbox">
+                    <input class="other" type="text" placeholder="อื่นๆ โปรดระบุ">
+                </div>
+                
+
+                <h4>งบประมาณในการจัดซื้อซอฟแวร์ <span class="required">*</span></h4>
+
+                <div class="col">
+                    <input name="budget-range" id="0-300" class="" type="radio">
+                    <label class="radio-label" for="0-300">0 - 300 ฿</label>
+                </div>
+                
+                <div class="col">
+                    <input name="budget-range" id="301-500" class="" type="radio">
+                    <label class="radio-label" for="301-500">301 - 500 ฿</label>
+                </div>
+            
+                <div class="col">
+                    <input name="budget-range" id="501-1000" class="" type="radio">
+                    <label class="radio-label" for="501-1000">501 - 1000 ฿</label>
+                </div>
+                
+                <div class="col">
+                    <input name="budget-range" id="1000-up" class="" type="radio">
+                    <label class="radio-label" for="1000-up">1000 ฿ หรือ มากกว่า</label>
+                </div>
+
+            </div>
+
+            
+
             <div class="col text-center">
-                <button class="btn btn-danger btn-lg" type="submit">Send</button>
+                <button type="submit">บันทึกข้อมูล</button>
             </div>
             
 
